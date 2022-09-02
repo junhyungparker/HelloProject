@@ -1,4 +1,5 @@
 package org.example;
 
-public class WordCRUD {
+public class WordCRUD implements ICRUD{
+
 }
