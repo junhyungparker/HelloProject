@@ -2,7 +2,7 @@ package org.example;
 
 public class Word {
     private String name;
-    private String meaning;
+    private String meaning;;
 
     public Word(String name, String meaning) {
         this.name = name;
