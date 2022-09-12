@@ -125,7 +125,7 @@ public class WordCRUD implements ICRUD{
 
     public void loadFile(){
         try{
-            BufferedReader br = new BufferedReader(new FileReader("fname"));
+            BufferedReader br = new BufferedReader(new FileReader(fname));
             String line;
             int count = 0;
 
@@ -150,7 +150,7 @@ public class WordCRUD implements ICRUD{
 
     public void saveFile(){
         try{
-            PrintWriter pr = new PrintWriter(new FileWriter("test.txt"));
+            PrintWriter pr = new PrintWriter(new FileWriter(fname));
             for(Word one : list){
                 pr.write(one.toFileString() + "\n");
             }
