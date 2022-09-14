@@ -105,6 +105,7 @@ public class WordCRUD implements ICRUD{
         System.out.println("단어가 수정되었습니다.");
     }
 
+    //단어 삭제
     public void deleteItem() {
         System.out.print("=> 삭제할 단어 검색 : ");
         String keyword = s.next();
@@ -123,6 +124,7 @@ public class WordCRUD implements ICRUD{
             System.out.println("취소되었습니다.");
     }
 
+    //파일 불러오기
     public void loadFile() {
         try{
             BufferedReader br = new BufferedReader(new FileReader(fname));
@@ -148,6 +150,7 @@ public class WordCRUD implements ICRUD{
         }
     }
 
+    //파일 저장
     public void saveFile() {
         try{
             PrintWriter pr = new PrintWriter(new FileWriter(fname));
@@ -169,6 +172,7 @@ public class WordCRUD implements ICRUD{
         listAll(level);
     }
 
+    //단어 검색
     public void searchWord() {
         System.out.print("=> 원하는 단어은? ");
         String keyword = s.next();
