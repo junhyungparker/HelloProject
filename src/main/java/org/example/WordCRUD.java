@@ -123,7 +123,7 @@ public class WordCRUD implements ICRUD{
             System.out.println("취소되었습니다.");
     }
 
-    public void loadFile(){
+    public void loadFile() {
         try{
             BufferedReader br = new BufferedReader(new FileReader(fname));
             String line;
